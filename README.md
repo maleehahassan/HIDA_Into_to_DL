@@ -197,7 +197,7 @@ except ValueError:
 
 ## Fallbacks
 Explore [mybinder](https://mybinder.org)
-    - Open [this url](https://mybinder.org/)
-    - Wait for a mybinder session to spawn
-    - Open the notebook of your choice
+- Open [this url](https://mybinder.org/)
+- Wait for a mybinder session to spawn
+- Open the notebook of your choice
 ---
