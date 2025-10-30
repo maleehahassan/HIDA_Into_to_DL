@@ -180,18 +180,24 @@ except ValueError:
 3. **Memory Usage**:
    - Monitor memory usage (RAM)
    - Clear output cells when not needed
-   - Restart runtime if memory issues occur
+   - Restart the runtime if memory issues occur
    - Use appropriate batch sizes
 
 4. **Performance Tips**:
    - Keep data on Google Drive for faster access
    - Use efficient data loading methods
    - Enable mixed precision training when possible
-   - Monitor training with tensorboard
+   - Monitor training with TensorBoard
 
 ## Note
 - The notebooks are self-contained and include all necessary package installations
 - Some notebooks may require additional data files - check the notebook contents for specific requirements
 - Make sure to select GPU runtime in Colab for notebooks involving deep learning models
 
+
+## Fallbacks
+Explore [mybinder](https://mybinder.org)
+    - Open [this url](https://mybinder.org/)
+    - Wait for a mybinder session to spawn
+    - Open the notebook of your choice
 ---
