@@ -21,10 +21,22 @@ from sklearn.metrics import confusion_matrix
 # Load the CIFAR10 dataset
 (train_images, train_labels), (test_images, test_labels) = keras.datasets.cifar10.load_data()
 
+# Set the number of images to use for training
+n_images = 500
+n_test = 100
+
+# Select the first n_images for training
+train_images = train_images[:n_images]
+train_labels = train_labels[:n_images]
+
+# Select the first n_test for testing
+test_images = test_images[:n_test]
+test_labels = test_labels[:n_test]
+
 # Resize images to 224x224 for compatibility with pretrained models
 IMG_SIZE = 224
-train_images_resized = tf.image.resize(train_images, [IMG_SIZE, IMG_SIZE]).numpy()
-test_images_resized = tf.image.resize(test_images, [IMG_SIZE, IMG_SIZE]).numpy()
+train_images_resized = tf.image.resize(train_images, [IMG_SIZE, IMG_SIZE])
+test_images_resized = tf.image.resize(test_images, [IMG_SIZE, IMG_SIZE])
 
 # Normalize pixel values to [0, 1]
 train_images_resized = train_images_resized / 255.0
